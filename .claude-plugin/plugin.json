@@ -1,0 +1,20 @@
+{
+  "name": "geo-seo-plugin",
+  "version": "1.0.0",
+  "description": "Generative Engine Optimization (GEO) + SEO skill for Claude Code. Generates JSON-LD schema stacks, press-release playbooks, entity density, and AI-citation-optimized content based on the Princeton GEO Study, Muck Rack Generative Pulse Dec 2025 (1M+ citations analyzed), Averi B2B SaaS Citation Benchmarks 2026, and the 2024 Google Content Warehouse API leak.",
+  "author": "Santino Gatmaytan",
+  "license": "MIT",
+  "repository": "https://github.com/sants2001/geo-seo-plugin",
+  "keywords": [
+    "seo",
+    "geo",
+    "generative-engine-optimization",
+    "schema-org",
+    "jsonld",
+    "ai-citations",
+    "chatgpt",
+    "perplexity",
+    "gemini",
+    "claude-code-skill"
+  ]
+}
