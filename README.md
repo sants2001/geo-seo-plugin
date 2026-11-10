@@ -1,29 +1,51 @@
 # geo-seo-plugin
 
-A Claude Code skill that gets a website found, cited and recommended by **ChatGPT, Perplexity, Gemini and Google**: GEO, AEO, AI visibility and SEO in one place.
+### Get your site recommended by ChatGPT.
 
-- New product with no audience? Run `/geo-seo playbook`.
-- Existing site? Run `/geo-seo audit`.
+A Claude Code skill for **GEO, AEO and SEO**. It makes ChatGPT, Perplexity, Gemini and Google find your site, cite it, and send people to it.
+
+> **100+ waitlist signups. Zero social posts.**
+> This is the playbook behind them. When we asked those signups where they found us, the #1 answer was **ChatGPT**.
+
+```
+/geo-seo playbook    new product, no audience yet: start here
+/geo-seo audit       existing site: find every gap
+```
 
 ---
 
-## Field-tested: the Answer Library playbook
+## How we got 100+ signups without posting once
 
-Version 2 leads with a method that worked in practice, not only a summary of studies.
+[Vouched](https://www.vouched.ph) is a creator marketplace in the Philippines. We never posted on social media and ran no ads. Instead, we built pages that answered the exact questions people were already typing into ChatGPT. ChatGPT started sending them to us.
 
-It is the setup behind **[Vouched](https://www.vouched.ph)**, a Philippine creator marketplace. Its closed-alpha waitlist filled with no social posting, and **ChatGPT was the most common answer to "where did you find us"**, ahead of Google. That is self-reported and correlational, not a controlled test, and the skill says so wherever it matters.
+The idea is simple. When someone asks AI a question the web barely covers, it has almost nothing to pull from. Be the one page that answers it plainly, and you become the answer.
 
-The idea: when someone asks an AI a question the web barely covers, the engine has few pages to pull from. Be the page that answers it plainly.
+The skill turns that into seven steps:
 
-1. **Find the thin query space.** List the questions your users would type into ChatGPT, then see where today's answers are generic, global or empty.
-2. **One page per job.** How it works per audience, pricing, an FAQ in your users' words, task guides, honest comparisons, free tools.
-3. **Write product truth, including the limits.** A direct answer up top, a visible review date, what the product does not do, and no invented results.
-4. **Content as data.** Guides live as typed records; the pages, JSON-LD, sitemap and llms.txt are all built from them, with tests guarding links and dates.
-5. **llms.txt with a boundaries block** (optional and cheap).
-6. **The technical floor.** Server-rendered answers, a canonical on every page and never in the root layout, a generated sitemap, robots that allow AI crawlers, and Organization JSON-LD for your market.
-7. **Measure from the first signup.** A required "Where did you find us?" field that names the AI engines.
+1. **Find the questions AI can't answer yet.** Ask ChatGPT what your users ask. Every vague, global or "I'm not aware of one" reply is a page you can own.
+2. **Give every job its own page.** How it works for each audience, pricing, an FAQ in your users' own words, task guides, honest comparisons, free tools.
+3. **Tell the truth, including the limits.** A direct answer up top, a visible review date, what the product does *not* do. Specifics get quoted. Hype gives an engine nothing to quote.
+4. **Write once, publish everywhere.** Guides live as data. Pages, schema, sitemap and llms.txt are all generated from them, with tests guarding every link and date.
+5. **Tell AI what you are not.** An llms.txt with a boundaries block, so any engine that reads it knows your limits.
+6. **Nail the boring stuff.** Answers in the server HTML, a canonical on every page, a generated sitemap, robots that welcome AI crawlers, schema for your market.
+7. **Ask every signup where they found you.** One required field that names the AI engines. That field is how we know ChatGPT was #1.
 
-The skill also lists exactly where the playbook departs from the research rules below, and what the case did not test.
+**No hype in the skill itself.** Our sources are self-reported, and this was not a controlled experiment. The skill labels what was measured and what is reasoning, and lists where the playbook departs from the textbook rules. You always know which is which.
+
+---
+
+## Everything else inside
+
+The playbook sits on top of a full GEO and SEO toolkit:
+
+- **Schema that engines read:** Organization, WebSite, SoftwareApplication or Service, FAQPage, BreadcrumbList, Article and BlogPosting, with safe JSON-LD injection
+- **Metadata that survives the share:** titles and descriptions sized by pixel width, Open Graph, Twitter cards, hreflang, PWA and verification tags
+- **A crawl layer built for AI:** generated sitemaps, robots.txt with an AI crawler matrix, llms.txt and per-page `.md.txt` companions
+- **Content that gets cited:** direct-answer leads, stat callouts, comparison tables, visible FAQs, expert quotes
+- **Alt text at scale:** classification, length rules and bulk generation
+- **Earned media:** an AI-optimized press release template and distribution targets
+- **A dated Platform Changelog:** what Google and the AI engines changed, and when, so stale advice never ships
+- **Measurement that tells the truth:** same-day citability tests, monthly surfacing checks, and the signup-source field
 
 ---
 
@@ -31,13 +53,13 @@ The skill also lists exactly where the playbook departs from the research rules 
 
 | Command | What it does |
 |---|---|
-| `/geo-seo playbook <target>` | Audit and build against the Answer Library playbook. Start here for a new product |
-| `/geo-seo <target>` | Full generation from the One-Shot Page Brief |
-| `/geo-seo audit <target>` | PRESENT / MISSING / WRONG gap report, with `file:line` references |
-| `/geo-seo fix <target>` | Run the audit, then apply fixes in priority order |
-| `/geo-seo metadata <target>` | Title, description, Open Graph and Twitter optimization only |
+| `/geo-seo playbook <target>` | Audit and build against the Answer Library playbook |
+| `/geo-seo <target>` | Full generation from the one-shot page brief |
+| `/geo-seo audit <target>` | PRESENT / MISSING / WRONG gap report with `file:line` references |
+| `/geo-seo fix <target>` | Audit, then apply fixes in priority order |
+| `/geo-seo metadata <target>` | Title, description, Open Graph and Twitter only |
 | `/geo-seo alt <target>` | Alt text audit and bulk generation |
-| `/geo-seo ads <target>` | Google Ads landing-page alignment check |
+| `/geo-seo ads <target>` | Google Ads landing-page alignment |
 
 The audit script also runs on its own, with zero dependencies:
 
@@ -46,60 +68,11 @@ node skills/geo-seo/scripts/audit.mjs --url https://example.com
 node skills/geo-seo/scripts/audit.mjs --dir app/
 ```
 
-It exits 1 on any CRITICAL finding, so it can gate CI.
+It exits 1 on any CRITICAL finding, so you can drop it into CI.
 
 ---
 
-## Research foundations
-
-| Source | Contribution |
-|---|---|
-| [Princeton GEO Study](https://arxiv.org/abs/2311.09735) (Aggarwal et al.) | Citing authoritative sources: **+115% citation rate** |
-| [Muck Rack Generative Pulse, "What Is AI Reading?" (Dec 2025)](https://generativepulse.ai/report/) | 1M+ citations analyzed; press releases grew **5x**; 94% non-paid; 82% earned media |
-| [Averi B2B SaaS Citation Benchmarks (2026)](https://www.averi.ai/how-to/chatgpt-vs.-perplexity-vs.-google-ai-mode-the-b2b-saas-citation-benchmarks-report-(2026)) | H1, H2, H3 hierarchy **+40%**; 120 to 180 word sections **+70%**; comparison tables **+47%** |
-| [Google Content Warehouse API Leak (2024)](https://github.com/schoberg/google-ranking-signals-plugin) | 2,596 modules and 14,014 attributes: confirmed ranking factors and demotions to avoid |
-
-The skill also cites the Foglift Q3 2026 multi-engine benchmark and Google's own AI optimization guidance, and keeps a dated **Platform Changelog** of search changes (for example Googlebot's 2026-08-20 JSON-LD unescaping change). Every benchmark carries its date, because they go stale within a quarter.
-
----
-
-## The 15 research rules
-
-Run the playbook first for a new product; these come mostly from studies of sites that already have press and backlinks.
-
-1. **94% of AI citations are non-paid, 82% earned media.** Invest in PR, not content farms.
-2. **Press releases grew 5x as an AI citation source.** Write more, ship weekly.
-3. **Citation rate peaks within 7 days of publication.** Plan distribution for the same week.
-4. **50% of AI citations come from articles under 11 months old.** Refresh or republish yearly.
-5. **Schema has a `sameAs` array with at least 4 authoritative URLs.**
-6. **Canonical URL and `og:url` match exactly on every page.** One www or non-www variant sitewide.
-7. **Title tag under 60 characters, primary keyword in the first 40.**
-8. **All four date sources (URL, JSON-LD, byline, meta) agree within 7 days.**
-9. **Descriptive body headings beat question-style ones** (4.3 vs 3.4 citations). Questions only in FAQ blocks.
-10. **Sections of 120 to 180 words between headings.**
-11. **Lead paragraph of 40 to 60 words with the direct answer up top.**
-12. **A comparison table with descriptive column headers.**
-13. **15+ named entities per page.**
-14. **25 to 40 hyperlinked stats per long-form piece**, each with its source.
-15. **Publishing cadence of 8 to 12+ pieces a month.**
-
-**Never:** fabricate `aggregateRating`, use "click here" anchors, or publish auto-generated text.
-
----
-
-## What it generates
-
-- **Schema stack**: Organization, WebSite, SoftwareApplication or Service, FAQPage, BreadcrumbList, Article and BlogPosting, as applicable
-- **Metadata**: title, description, Open Graph, Twitter Card, `article:*` tags, hreflang, PWA and verification tags
-- **Crawl layer**: generated sitemap, robots.txt with an AI crawler matrix, llms.txt and per-page `.md.txt` companions
-- **Content blocks**: direct-answer leads, stat callouts, comparison tables, visible FAQs, expert quotes
-- **Alt text**: classification, length rules and bulk generation
-- **Earned media**: an AI-optimized press release template and distribution targets
-- **Measurement**: citability tests, surfacing checks and a signup-source field
-
----
-
-## Installation
+## Install
 
 ### As a plugin (recommended)
 
@@ -124,9 +97,47 @@ Restart Claude Code, then run `/geo-seo`.
 
 ---
 
-## Tech stack assumption
+## Built on research, tested in the field
 
-Examples target **Next.js 15 App Router, React 19 and TypeScript**, but the schema, content and measurement rules are framework-agnostic. They translate directly to WordPress, Astro, SvelteKit or plain HTML.
+The playbook is what worked for us. Underneath it, every rule traces to a source:
+
+| Source | What it adds |
+|---|---|
+| [Princeton GEO Study](https://arxiv.org/abs/2311.09735) (Aggarwal et al.) | Citing authoritative sources: **+115% citation rate** |
+| [Muck Rack Generative Pulse, "What Is AI Reading?" (Dec 2025)](https://generativepulse.ai/report/) | 1M+ citations analyzed; press releases grew **5x**; 94% non-paid; 82% earned media |
+| [Averi B2B SaaS Citation Benchmarks (2026)](https://www.averi.ai/how-to/chatgpt-vs.-perplexity-vs.-google-ai-mode-the-b2b-saas-citation-benchmarks-report-(2026)) | Clean heading hierarchy **+40%**; 120 to 180 word sections **+70%**; comparison tables **+47%** |
+| [Google Content Warehouse API Leak (2024)](https://github.com/schoberg/google-ranking-signals-plugin) | 2,596 modules and 14,014 attributes: confirmed ranking factors and demotions to avoid |
+
+The skill also draws on the Foglift Q3 2026 multi-engine benchmark and Google's own AI optimization guidance. Every benchmark carries its date, because in this field numbers go stale within a quarter.
+
+<details>
+<summary><strong>The 15 research rules</strong> (run the playbook first; these come from studies of sites that already have press)</summary>
+
+1. **94% of AI citations are non-paid, 82% earned media.** Invest in PR, not content farms.
+2. **Press releases grew 5x as an AI citation source.** Write more, ship weekly.
+3. **Citation rate peaks within 7 days of publication.** Plan distribution for the same week.
+4. **50% of AI citations come from articles under 11 months old.** Refresh or republish yearly.
+5. **Schema has a `sameAs` array with at least 4 authoritative URLs.**
+6. **Canonical URL and `og:url` match exactly on every page.** One www or non-www variant sitewide.
+7. **Title tag under 60 characters, primary keyword in the first 40.**
+8. **All four date sources (URL, JSON-LD, byline, meta) agree within 7 days.**
+9. **Descriptive body headings beat question-style ones** (4.3 vs 3.4 citations). Questions only in FAQ blocks.
+10. **Sections of 120 to 180 words between headings.**
+11. **Lead paragraph of 40 to 60 words with the direct answer up top.**
+12. **A comparison table with descriptive column headers.**
+13. **15+ named entities per page.**
+14. **25 to 40 hyperlinked stats per long-form piece**, each with its source.
+15. **Publishing cadence of 8 to 12+ pieces a month.**
+
+**Never:** fabricate `aggregateRating`, use "click here" anchors, or publish auto-generated text.
+
+</details>
+
+---
+
+## Tech stack
+
+Examples target **Next.js 15 App Router, React 19 and TypeScript**. The schema, content and measurement rules work anywhere: WordPress, Astro, SvelteKit or plain HTML.
 
 ---
 
@@ -136,7 +147,7 @@ PRs welcome, especially:
 
 - Platform-specific playbooks (Astro, Hugo, WordPress, Webflow)
 - New citation benchmarks as they publish, with their dates
-- More field results: what you shipped, and where your signups said they found you
+- **Your field results:** what you shipped, and where your signups said they found you
 
 See [CHANGELOG.md](CHANGELOG.md) for what changed in each version.
 

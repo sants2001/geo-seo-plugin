@@ -1,7 +1,7 @@
 {
   "name": "geo-seo-plugin",
   "version": "2.0.0",
-  "description": "Get a site found, cited and recommended by ChatGPT, Perplexity, Gemini and Google (GEO, AEO, AI visibility, SEO). Leads with a field-tested Answer Library playbook for new products, then JSON-LD schema stacks, metadata, sitemap and robots, llms.txt, and AI-citation content rules grounded in the Princeton GEO Study, Muck Rack Generative Pulse, Averi and Foglift citation benchmarks, and Google's guidance. Ships a zero-dependency audit script.",
+  "description": "Get your site recommended by ChatGPT. GEO, AEO and SEO for Claude Code, led by the field-tested Answer Library playbook behind a 100+ person waitlist built with zero social posts, where ChatGPT was the #1 source signups named. Plus JSON-LD schema stacks, metadata, sitemap and robots, llms.txt, AI-citation content rules grounded in published citation research, and a zero-dependency audit script.",
   "author": {
     "name": "Santino Gatmaytan",
     "url": "https://github.com/sants2001"

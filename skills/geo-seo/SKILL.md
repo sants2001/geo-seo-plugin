@@ -2,8 +2,8 @@
 name: geo-seo
 description: >
   Get a site found, cited and recommended by ChatGPT, Perplexity, Gemini and Google
-  (GEO, AEO, AI visibility, SEO). Starts with a field-tested Answer Library playbook
-  for new products (/geo-seo playbook). Generates JSON-LD schema, meta tags, Open
+  (GEO, AEO, AI visibility, SEO). Starts with the field-tested Answer Library playbook
+  behind a 100+ person waitlist built with zero social posts (/geo-seo playbook). Generates JSON-LD schema, meta tags, Open
   Graph / Twitter / hreflang / PWA tags, alt text, sitemap.xml, robots.txt, Google
   Knowledge Panel setup, Google Ads landing-page alignment, press release patterns,
   LLMs.txt + per-page .md.txt companion files, and content that earns AI citations.
@@ -20,24 +20,27 @@ trigger: /geo-seo
 
 Triggered by `/geo-seo [target]` where target is a page, component, or project directory.
 
-Reference implementation: **pressbeat.io** — audited 2026-04-16, full schema stack documented below.
+Reference implementation: **pressbeat.io**, audited 2026-04-16, full schema stack documented below.
 
 **Research foundations:**
-- **Princeton GEO Study** (Aggarwal et al., arXiv:2311.09735) — citing authoritative sources increases AI citation rate by **+115%**.
-- **Muck Rack Generative Pulse — "What Is AI Reading?" (Dec 2025)** — analyzed 1M+ citations across ChatGPT, Gemini, Perplexity, Claude (Jul–Dec 2025). Key findings: 94% of AI citations come from non-paid sources, 82% from earned media, press release citations grew **5x** in 6 months, and only **2% overlap** between journalists PR teams pitch and journalists AI cites.
-- **Averi B2B SaaS Citation Benchmarks Report (2026)** — on-page/HTML structure experiments across ChatGPT vs Perplexity vs Google AI Mode. Key findings: proper H1→H2→H3 hierarchy = +40% citation lift, 120–180 word sections = +70% citations, comparison tables with descriptive headers = +47%, descriptive headings beat question-style (4.3 vs 3.4 citations).
+- **Princeton GEO Study** (Aggarwal et al., arXiv:2311.09735): citing authoritative sources increases AI citation rate by **+115%**.
+- **Muck Rack Generative Pulse, "What Is AI Reading?" (Dec 2025)**: analyzed 1M+ citations across ChatGPT, Gemini, Perplexity, Claude (Jul–Dec 2025). Key findings: 94% of AI citations come from non-paid sources, 82% from earned media, press release citations grew **5x** in 6 months, and only **2% overlap** between journalists PR teams pitch and journalists AI cites.
+- **Averi B2B SaaS Citation Benchmarks Report (2026)**: on-page/HTML structure experiments across ChatGPT vs Perplexity vs Google AI Mode. Key findings: proper H1→H2→H3 hierarchy = +40% citation lift, 120–180 word sections = +70% citations, comparison tables with descriptive headers = +47%, descriptive headings beat question-style (4.3 vs 3.4 citations).
 
 ---
 
 ## Field-Tested Playbook: the Answer Library (start here for a new product)
 
-This is the setup behind Vouched (vouched.ph), a Philippine creator marketplace
-whose closed-alpha waitlist filled with no social posting, while ChatGPT was the
-most common answer to "where did you find us", ahead of Google. It was built in
-stages, and the first AI-referred signups arrived while the site had only its core
-question pages (how it works, FAQ, pricing); the larger guide library came later.
-That is correlation from self-reported answers, not a controlled test: nothing
-isolates which part mattered.
+This is the playbook behind Vouched (vouched.ph), a Philippine creator
+marketplace that filled a **100+ person waitlist with zero social posts**. Ask its
+signups where they found it, and the #1 answer is ChatGPT, ahead of Google. No ads,
+no following: the site answered the questions people were already asking AI, and
+AI sent them over.
+
+It was built in stages. The first AI-referred signups arrived while the site had
+only its core question pages (how it works, FAQ, pricing); the larger guide library
+came later. The sources are self-reported and nothing here is a controlled test, so
+treat it as a setup that worked, not a guaranteed result.
 
 Use it for a new product, a new category, or a local market with no audience and
 no budget. Run it before the research rules below, which come mostly from studies
@@ -205,7 +208,7 @@ Report each line PRESENT / MISSING / WRONG with the file or URL as evidence:
 
 ---
 
-## TL;DR — The 15 Rules That Matter Most
+## TL;DR: The 15 Rules That Matter Most
 
 New product: run the Field-Tested Playbook above first, then these rules. The
 playbook did not test rules 1 and 2 (PR) and departs from a few others; see its
@@ -213,21 +216,21 @@ Departures list.
 
 If you only remember this page, remember these:
 
-1. **94% of AI citations are non-paid, 82% earned media** — invest in PR, not SEO content farms.
-2. **Press releases grew 5x as an AI citation source (Jul–Dec 2025)** — write more, ship weekly.
-3. **Citation rate peaks within 7 days of publication** — plan distribution for the same week.
-4. **50% of AI citations come from articles < 11 months old** — refresh or republish annually.
-5. **Schema has a `sameAs` array with ≥ 4 authoritative URLs** — LinkedIn + Twitter + ProductHunt + Crunchbase minimum.
-6. **Canonical URL + `og:url` must match exactly on every page** — one www/non-www variant, enforced sitewide.
-7. **Title tag < 60 chars with primary keyword in first 40** — `titlematchScore` rewards it.
-8. **All four date sources (URL, JSON-LD, byline, meta) must agree within 7 days** — otherwise Google discards freshness entirely.
-9. **Headings: descriptive in the body (4.3 citations avg), questions ONLY inside FAQ block (3.4 avg)** — counterintuitive but measured.
-10. **Sections of 120–180 words between headings** — `+70%` citation lift vs sections under 50 words.
-11. **Lead paragraph 40–60 words with the direct answer up top** — Perplexity extracts from the opener.
-12. **Every page has a comparison table with descriptive column headers** — `+47%` on Google AI.
-13. **15+ named entities per page** — `4.8x` higher AI selection probability.
-14. **25–40 hyperlinked stats per long-form piece, each with source citation** — `+22–30%` visibility per platform.
-15. **Publishing cadence: 8–12+ pieces/month** — the threshold for "high AI visibility" (Averi 2026).
+1. **94% of AI citations are non-paid, 82% earned media**: invest in PR, not SEO content farms.
+2. **Press releases grew 5x as an AI citation source (Jul–Dec 2025)**: write more, ship weekly.
+3. **Citation rate peaks within 7 days of publication**: plan distribution for the same week.
+4. **50% of AI citations come from articles < 11 months old**: refresh or republish annually.
+5. **Schema has a `sameAs` array with ≥ 4 authoritative URLs**: LinkedIn + Twitter + ProductHunt + Crunchbase minimum.
+6. **Canonical URL + `og:url` must match exactly on every page**: one www/non-www variant, enforced sitewide.
+7. **Title tag < 60 chars with primary keyword in first 40**: `titlematchScore` rewards it.
+8. **All four date sources (URL, JSON-LD, byline, meta) must agree within 7 days**: otherwise Google discards freshness entirely.
+9. **Headings: descriptive in the body (4.3 citations avg), questions ONLY inside FAQ block (3.4 avg)**: counterintuitive but measured.
+10. **Sections of 120–180 words between headings**: `+70%` citation lift vs sections under 50 words.
+11. **Lead paragraph 40–60 words with the direct answer up top**: Perplexity extracts from the opener.
+12. **Every page has a comparison table with descriptive column headers**: `+47%` on Google AI.
+13. **15+ named entities per page**: `4.8x` higher AI selection probability.
+14. **25–40 hyperlinked stats per long-form piece, each with source citation**: `+22–30%` visibility per platform.
+15. **Publishing cadence: 8–12+ pieces/month**: the threshold for "high AI visibility" (Averi 2026).
 
 **The three things never to do:** fabricate `aggregateRating`, use "click here" internal anchors, publish auto-generated/spun text.
 
@@ -244,11 +247,11 @@ If you only remember this page, remember these:
 
 ---
 
-## Platform Changelog — read before quoting any benchmark below
+## Platform Changelog: read before quoting any benchmark below
 
 Search and AI-answer surfaces move faster than this file. Verified through **2026-09-12**. Anything below this section carrying an older date is a snapshot, not a standing fact.
 
-### 2026-08-20 — Googlebot JSON-LD: single pass of HTML unescaping (BREAKING, silent)
+### 2026-08-20, Googlebot JSON-LD: single pass of HTML unescaping (BREAKING, silent)
 
 Google changed JSON-LD extraction to apply **only one pass of HTML unescaping**, "to bring our parser up to JSON and other standards" (Google Search Central, 2026-08-20). Double-escaped entities in the HTML source are no longer unrolled. Google's guidance: use standard JSON escapes or Unicode hexadecimal escapes, e.g. `&` rather than a double-escaped ampersand.
 
@@ -262,29 +265,29 @@ Why this outranks everything else in this skill right now:
 
 Carry one caveat into GEO work: a third-party conformance measurement (`fabio-rovai/jsonld-escaping-conformance`, Aug 2026) argues JSON-LD 1.1 §7.2 implies **zero** unescaping passes, so Google's single pass still differs from most other parsers. A value that now reads correctly to Googlebot can still read wrong to non-Google AI crawlers. That is a third-party claim, not Google guidance, but it is another reason to prefer Unicode escapes: they are unambiguous to every parser.
 
-### 2026-08-18 to 2026-08-21 — Google August 2026 spam update
+### 2026-08-18 to 2026-08-21: Google August 2026 spam update
 
 Rolled out 2026-08-18, completed 2026-08-21, with unconfirmed volatility before and after. Separately, Google will **not enforce site reputation abuse manual actions for searchers in the EEA**. If a site lost traffic in that window, check the spam-policy surface (parasite or third-party hosted sections, scaled content) before touching anything in this skill.
 
-### 2026-08 — Search Console is the first-party GEO measurement surface
+### 2026-08: Search Console is the first-party GEO measurement surface
 
 - The **generative AI performance report** expanded to more properties. It had a data bug mid-August, and performance reports showed an impressions/clicks drop around 2026-08-12 that was a reporting artifact, not a ranking move.
 - **AI Mode queries appear in Search Console performance data but are NOT broken out in the generative AI report.** Never tell a client that report is their full AI Mode picture.
 
 Surfacing now has a first-party read. Report from it, and label every other number Estimated per the metric-labeling rule below.
 
-### 2026-06-15 — llms.txt cannot do discovery (Google, John Mueller)
+### 2026-06-15: llms.txt cannot do discovery (Google, John Mueller)
 
 Mueller's position: an LLM system cannot use `llms.txt` to decide **which** site to surface for a query, because it is self-reported and every site can assert the same thing. He compares it to the meta keywords tag. He allows one narrow use: once an agent is already on the site, a machine-readable index helps it navigate. He and Martin Splitt both restated that **HTML plus internal links is the discovery layer**. Agent-navigation standards (WebMCP and friends) had not settled as of mid-2026.
 
 Step 17 is still worth shipping, but for **navigation and clean extraction after arrival**, not for discovery. Never sell llms.txt as a ranking or citation lever.
 
-### 2026-08/09 — AI Mode and crawler mechanics
+### 2026-08/09: AI Mode and crawler mechanics
 
 - Google began **pushing AI Overviews into AI Mode responses** and dropped the "Show more" button. AI Mode gained link carousels for developing topics and is partially powered by **Gemini 3.7 Flash**.
 - Google restated: **nothing special to do for generative AI responses in Search**, and **Reddit gets no special preference** in rankings. Both confirm the scope rule in Step 4.5.
 - Google rolled out **`google.com/goto` tracking parameters** on result URLs to frustrate third-party SERP scrapers. Rank-tracking numbers sourced from scrapers around this change are suspect; prefer Search Console.
-- Google crawlers now send **HEAD, OPTIONS, PUT, PATCH, DELETE** (HTTP QUERY support is coming), and **Google's crawlers do not parse JSON responses** — a JSON API endpoint is not a content surface.
+- Google crawlers now send **HEAD, OPTIONS, PUT, PATCH, DELETE** (HTTP QUERY support is coming), and **Google's crawlers do not parse JSON responses**: a JSON API endpoint is not a content surface.
 - **Misconfigured Cloudflare** was a repeat cause of self-inflicted SEO damage this cycle. Check bot-protection rules before diagnosing anything else.
 
 ### Benchmark half-life warning (measured, not opinion)
@@ -315,7 +318,7 @@ Use this skill for: JSON-LD schema, meta tags, Open Graph, Twitter cards, hrefla
 
 ---
 
-## Writing Style — No Em Dashes (MANDATORY for all generated web copy)
+## Writing Style: No Em Dashes (MANDATORY for all generated web copy)
 
 When writing or rewriting website content, landing pages, blog posts, press releases, meta descriptions, schema descriptions, FAQ answers, or any prose that ships to a live site, **do not use em dashes (—)**.
 
@@ -325,11 +328,11 @@ When writing or rewriting website content, landing pages, blog posts, press rele
 - Muck Rack + Averi data shows AI engines increasingly weight author credibility and human-voice signals; em-dash-heavy prose reads as machine-written and suppresses citation probability.
 
 **Replacement rules (apply in this priority order):**
-1. **Comma** — for brief pauses, parenthetical asides, or appositives.
-2. **Period** — split into two sentences when the second clause is a complete thought.
-3. **Semicolon** — for linking two closely related independent clauses.
-4. **Parentheses** — for true asides or clarifications.
-5. **Colon** — when the second part defines, lists, or expands the first.
+1. **Comma**: for brief pauses, parenthetical asides, or appositives.
+2. **Period**: split into two sentences when the second clause is a complete thought.
+3. **Semicolon**: for linking two closely related independent clauses.
+4. **Parentheses**: for true asides or clarifications.
+5. **Colon**: when the second part defines, lists, or expands the first.
 
 **Scope:**
 - Applies to: H1/H2/H3 headings, body copy, lead paragraphs, meta titles, meta descriptions, OG descriptions, JSON-LD `description`/`about` fields, FAQ answers, press releases, alt text, image captions, comparison table cells.
@@ -341,21 +344,21 @@ When writing or rewriting website content, landing pages, blog posts, press rele
 
 ## What This Skill Does
 
-1. **Schema** — generates a full JSON-LD stack (Organization, WebSite, SoftwareApplication or Service, FAQPage, BreadcrumbList, Article where applicable)
-2. **Metadata** — title, description, Open Graph, Twitter Card, article:\* tags, canonical, with pixel-width enforcement and A/B variant generation (Step 10)
-3. **Alt text system** — 4-type classification, generation templates, audit rules, bulk vision-model generation (Step 11)
-4. **Extended meta stack** — theme-color, color-scheme, PWA, apple-\*, msapplication-\*, hreflang, verification tokens, geo meta (Step 12)
-5. **Knowledge Panel** — `sameAs` array with 4+ platforms to trigger Google entity disambiguation
-6. **Google Ads alignment** — Quality Score checklist, triplet coherence (ad/H1/title), UTM convention, DKI safety, message match scorer (Step 13)
-7. **Sitemap and robots.txt** — Next.js 15 dynamic generation, multi-sitemap split, AI crawler allow/block policy (Step 14)
-8. **Internal linking graph** — hub/spoke model, orphan audit, anchor text rules (Step 15)
-9. **Content signals** — inline citations, stat callouts, comparison tables, FAQ sections engineered for AI citation
-10. **Technical hygiene** — canonical URL, image alt/size attributes, font preloads, robots meta
-11. **Earned-media playbook** — press release structure plus journalist-citation alignment (Muck Rack Dec 2025)
-12. **Community seeding** — Reddit / Medium / Quora / YouTube signals now weighted heavily by AI engines
-13. **Audit script** — `scripts/audit.mjs`, zero-dep Node, runs against URL or local files, reports CRITICAL/HIGH/MEDIUM/LOW findings with `file:line` precision
-14. **Deterministic fix loop** — `/geo-seo fix <target>` runs audit, applies fixes in priority order, re-runs audit, idempotent (Step 16)
-15. **LLMs.txt + .md.txt layer** — generates `llms.txt` discovery index and per-page `.md.txt` companions for ChatGPT, Claude, Perplexity discoverability (Step 17); also fixes robots.txt to allow AI crawlers for brand/content sites
+1. **Schema**: generates a full JSON-LD stack (Organization, WebSite, SoftwareApplication or Service, FAQPage, BreadcrumbList, Article where applicable)
+2. **Metadata**: title, description, Open Graph, Twitter Card, article:\* tags, canonical, with pixel-width enforcement and A/B variant generation (Step 10)
+3. **Alt text system**: 4-type classification, generation templates, audit rules, bulk vision-model generation (Step 11)
+4. **Extended meta stack**: theme-color, color-scheme, PWA, apple-\*, msapplication-\*, hreflang, verification tokens, geo meta (Step 12)
+5. **Knowledge Panel**: `sameAs` array with 4+ platforms to trigger Google entity disambiguation
+6. **Google Ads alignment**: Quality Score checklist, triplet coherence (ad/H1/title), UTM convention, DKI safety, message match scorer (Step 13)
+7. **Sitemap and robots.txt**: Next.js 15 dynamic generation, multi-sitemap split, AI crawler allow/block policy (Step 14)
+8. **Internal linking graph**: hub/spoke model, orphan audit, anchor text rules (Step 15)
+9. **Content signals**: inline citations, stat callouts, comparison tables, FAQ sections engineered for AI citation
+10. **Technical hygiene**: canonical URL, image alt/size attributes, font preloads, robots meta
+11. **Earned-media playbook**: press release structure plus journalist-citation alignment (Muck Rack Dec 2025)
+12. **Community seeding**: Reddit / Medium / Quora / YouTube signals now weighted heavily by AI engines
+13. **Audit script**: `scripts/audit.mjs`, zero-dep Node, runs against URL or local files, reports CRITICAL/HIGH/MEDIUM/LOW findings with `file:line` precision
+14. **Deterministic fix loop**: `/geo-seo fix <target>` runs audit, applies fixes in priority order, re-runs audit, idempotent (Step 16)
+15. **LLMs.txt + .md.txt layer**: generates `llms.txt` discovery index and per-page `.md.txt` companions for ChatGPT, Claude, Perplexity discoverability (Step 17); also fixes robots.txt to allow AI crawlers for brand/content sites
 
 ---
 
@@ -367,25 +370,25 @@ Empirically-validated numbers as of each study's date. When generating pages, qu
 
 | Class | Examples | Half-life | Rule |
 |---|---|---|---|
-| **Structural** — how a page should be built | heading hierarchy, section length, lead-paragraph length, entity count, table presence | Years | Safe to quote as-is |
-| **Surface** — which engines cite whom | top-cited publications, per-platform source mix, outlet target lists | **~1 quarter** (see Benchmark half-life warning above) | Re-measure before quoting; label Estimated if you cannot
+| **Structural**: how a page should be built | heading hierarchy, section length, lead-paragraph length, entity count, table presence | Years | Safe to quote as-is |
+| **Surface**: which engines cite whom | top-cited publications, per-platform source mix, outlet target lists | **~1 quarter** (see Benchmark half-life warning above) | Re-measure before quoting; label Estimated if you cannot
 
 ### AI citation source mix (Muck Rack, Dec 2025, n=1M+ citations)
 
 | Signal | Stat | Implication |
 |---|---|---|
-| Non-paid sources | **94%** of AI citations | Paid placements barely move the needle — earn, don't buy |
+| Non-paid sources | **94%** of AI citations | Paid placements barely move the needle; earn, don't buy |
 | Earned media | **82%** | Press coverage is the dominant citation class |
 | Journalism share | 20–30% per period | Real reporting outweighs SEO content |
-| Press release citation growth | **5x** since Jul 2025 | Press releases are a fast-growing AI signal — ChatGPT + Gemini especially |
+| Press release citation growth | **5x** since Jul 2025 | Press releases are a fast-growing AI signal; ChatGPT + Gemini especially |
 | Third-party corporate/blogs | 37% → **24%** (Jul→Dec 2025) | SEO blog spam losing ground |
 | Wikipedia reliance | Declining | Still required for entity disambiguation, no longer a growth lever |
-| PR-pitch vs AI-citation overlap | **2%** | Traditional media lists are nearly decoupled from AI visibility — rebuild around AI-cited journalists |
+| PR-pitch vs AI-citation overlap | **2%** | Traditional media lists are nearly decoupled from AI visibility; rebuild around AI-cited journalists |
 
 ### Recency thresholds (Muck Rack, Dec 2025)
 
 - **50%** of AI citations come from articles published within the last **11 months**
-- **4%** come from the prior **week** — and citation rate peaks within **7 days** of publication
+- **4%** come from the prior **week**, and citation rate peaks within **7 days** of publication
 - **60.5%** of ChatGPT's most-cited pages were published within the last **2 years** (Averi, 2026)
 - Visible "last updated" timestamps give up to **+95 position boost** on ChatGPT (Averi, 2026)
 
@@ -395,7 +398,7 @@ Empirically-validated numbers as of each study's date. When generating pages, qu
 |---|---|
 | Proper H1→H2→H3 hierarchy | **+40%** likelihood of being cited |
 | 120–180 word sections between headers | **+70%** vs sections under 50 words |
-| Descriptive headings (vs question-style) | 4.3 vs 3.4 avg citations — descriptive WINS |
+| Descriptive headings (vs question-style) | 4.3 vs 3.4 avg citations; descriptive WINS |
 | Lead paragraph 40–60 words, direct answer | Critical for Perplexity extraction |
 | Comparison tables with descriptive headers | **+47%** on Google AI |
 | 15+ recognized entities per page | **4.8x** higher selection probability |
@@ -407,13 +410,13 @@ Empirically-validated numbers as of each study's date. When generating pages, qu
 - Domains with **32,000+ referring domains** double their citation rate (2.9 → 5.6)
 - Domain Trust ≥ **91** correlates with **6+** average citations
 - **Brand mentions** correlate more strongly with AI visibility than backlinks (r = 0.664)
-- **92.36%** of Google AI Mode citations come from **top-10 ranking** domains — traditional SEO is still the foundation
+- **92.36%** of Google AI Mode citations come from **top-10 ranking** domains; traditional SEO is still the foundation
 
 ### Top AI-cited publications (Muck Rack, Dec 2025)
 
-- **Claude** — U.S. News & World Report, Nature, Yahoo Finance
-- **ChatGPT** — Reuters, The Verge, The Guardian
-- **Gemini** — Forbes, Investopedia, NerdWallet
+- **Claude**: U.S. News & World Report, Nature, Yahoo Finance
+- **ChatGPT**: Reuters, The Verge, The Guardian
+- **Gemini**: Forbes, Investopedia, NerdWallet
 
 Use these as the target outlets for earned-media campaigns. Pitching outside this list is low-leverage for AI visibility.
 
@@ -421,11 +424,11 @@ Use these as the target outlets for earned-media campaigns. Pitching outside thi
 
 - Low AI visibility: 1–4 pieces/month
 - Moderate: 4–8 pieces/month
-- **High visibility: 8–12+ pieces/month** — with ~1–2 hours per piece using AI assistance
+- **High visibility: 8–12+ pieces/month**, with ~1–2 hours per piece using AI assistance
 
 ---
 
-## Step 0 — Gather Context
+## Step 0: Gather Context
 
 Before generating anything, read or ask for:
 
@@ -434,10 +437,10 @@ Before generating anything, read or ask for:
 - [ ] **Primary URL** (canonical base, www vs non-www)
 - [ ] **One-sentence description** (used verbatim in schema `description` fields)
 - [ ] **Founder name + LinkedIn URL** (for `founder` Person node)
-- [ ] **Social profiles** — LinkedIn company, Twitter/X, ProductHunt, Crunchbase, GitHub (for `sameAs`)
+- [ ] **Social profiles**: LinkedIn company, Twitter/X, ProductHunt, Crunchbase, GitHub (for `sameAs`)
 - [ ] **Logo URL** (webp preferred, ~7–32KB)
-- [ ] **Pricing** (if applicable — goes into `Offer` node)
-- [ ] **Rating/review data** (if applicable — goes into `aggregateRating`)
+- [ ] **Pricing** (if applicable, goes into `Offer` node)
+- [ ] **Rating/review data** (if applicable, goes into `aggregateRating`)
 - [ ] **Blog?** (yes → add Blog + BlogPosting schemas)
 - [ ] **Features list** (3–10 bullet points for `featureList`)
 - [ ] **FAQ pairs** (3–6 Q&A pairs for `FAQPage`)
@@ -446,13 +449,13 @@ If working from a codebase, read the existing `<head>` component and any existin
 
 ---
 
-## Step 1 — JSON-LD Schema Stack
+## Step 1: JSON-LD Schema Stack
 
 ### 1a. Sitewide Schema (inject on EVERY page)
 
 Generate all 5 blocks. Inject as `<script type="application/ld+json">` in `<head>`.
 
-#### Block 1 — Organization
+#### Block 1: Organization
 
 ```json
 {
@@ -491,14 +494,14 @@ Generate all 5 blocks. Inject as `<script type="application/ld+json">` in `<head
 
 **`sameAs` rule:** Minimum 4 URLs. Google uses this array for Knowledge Panel entity disambiguation. LinkedIn + Twitter + ProductHunt + one of (Crunchbase, GitHub, AngelList, Wikipedia) = minimum viable set.
 
-#### Block 2 — WebSite
+#### Block 2: WebSite
 
 ```json
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": "{{BRAND_NAME}}",
-  "alternateName": "{{BRAND_NAME}} — {{TAGLINE}}",
+  "alternateName": "{{BRAND_NAME}}: {{TAGLINE}}",
   "url": "{{CANONICAL_URL}}",
   "description": "{{ONE_SENTENCE_DESCRIPTION}}",
   "publisher": {
@@ -520,7 +523,7 @@ Generate all 5 blocks. Inject as `<script type="application/ld+json">` in `<head
 }
 ```
 
-#### Block 3 — SoftwareApplication or Service
+#### Block 3: SoftwareApplication or Service
 
 Use `SoftwareApplication` for SaaS tools. Use `Service` for agencies/consultancies.
 
@@ -559,7 +562,7 @@ Use `SoftwareApplication` for SaaS tools. Use `Service` for agencies/consultanci
 
 **Only include `aggregateRating` if you have real review data.** Never fabricate. Fake ratings are a Google rich result violation.
 
-#### Block 4 — FAQPage (sitewide)
+#### Block 4: FAQPage (sitewide)
 
 > Prefer the Field-Tested Playbook rule: put `FAQPage` only on pages where the questions are visible. Google's structured data guidelines forbid marking up content readers cannot see.
 
@@ -599,7 +602,7 @@ Use `SoftwareApplication` for SaaS tools. Use `Service` for agencies/consultanci
 
 **Minimum 3, maximum 10 FAQ items.** Questions should be phrased exactly as users search them (question format, natural language). Each answer should be 2–4 sentences: complete, self-contained, no links.
 
-#### Block 5 — SiteNavigationElement
+#### Block 5: SiteNavigationElement
 
 ```json
 {
@@ -722,13 +725,13 @@ Plus BreadcrumbList (3-level: Home → Blog → Article):
 
 ---
 
-## Step 2 — Meta Tags
+## Step 2: Meta Tags
 
 ### Homepage head template
 
 ```html
 <!-- Primary -->
-<title>{{BRAND_NAME}} — {{TAGLINE}}</title>
+<title>{{BRAND_NAME}}: {{TAGLINE}}</title>
 <meta name="description" content="{{150_CHAR_DESCRIPTION}}" />
 <meta name="author" content="{{BRAND_NAME}}" />
 <meta
@@ -739,7 +742,7 @@ Plus BreadcrumbList (3-level: Home → Blog → Article):
 <link rel="canonical" href="{{CANONICAL_URL}}" />
 
 <!-- Open Graph -->
-<meta property="og:title" content="{{BRAND_NAME}} — {{TAGLINE}}" />
+<meta property="og:title" content="{{BRAND_NAME}}: {{TAGLINE}}" />
 <meta property="og:description" content="{{150_CHAR_DESCRIPTION}}" />
 <meta property="og:url" content="{{CANONICAL_URL}}" />
 <meta property="og:site_name" content="{{BRAND_NAME}}" />
@@ -747,12 +750,12 @@ Plus BreadcrumbList (3-level: Home → Blog → Article):
 <meta property="og:image" content="{{OG_IMAGE_URL}}" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
-<meta property="og:image:alt" content="{{BRAND_NAME}} — {{TAGLINE}}" />
+<meta property="og:image:alt" content="{{BRAND_NAME}}: {{TAGLINE}}" />
 <meta property="og:type" content="website" />
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="{{BRAND_NAME}} — {{TAGLINE}}" />
+<meta name="twitter:title" content="{{BRAND_NAME}}: {{TAGLINE}}" />
 <meta name="twitter:description" content="{{150_CHAR_DESCRIPTION}}" />
 <meta name="twitter:image" content="{{OG_IMAGE_URL}}" />
 <meta name="twitter:site" content="@{{TWITTER_HANDLE}}" />
@@ -780,29 +783,29 @@ Plus BreadcrumbList (3-level: Home → Blog → Article):
 <meta name="robots" content="index, follow" />
 ```
 
-**Canonical rule:** Every page MUST have a canonical. Homepage canonical must match `og:url` exactly — same www/non-www. Pick one and enforce it sitewide.
+**Canonical rule:** Every page MUST have a canonical. Homepage canonical must match `og:url` exactly, same www/non-www. Pick one and enforce it sitewide.
 
 ---
 
-## Step 3 — Google Knowledge Panel Setup
+## Step 3: Google Knowledge Panel Setup
 
 Google's Knowledge Panel for a brand requires entity disambiguation. The schema signals that drive it:
 
 ### Required for Knowledge Panel
 
-1. **`sameAs` with 4+ authoritative profiles** — minimum viable set:
+1. **`sameAs` with 4+ authoritative profiles.** Minimum viable set:
    - `https://www.linkedin.com/company/{{SLUG}}`
    - `https://twitter.com/{{HANDLE}}`
    - `https://www.producthunt.com/products/{{SLUG}}`
    - `https://www.crunchbase.com/organization/{{SLUG}}`
 
-2. **Consistent NAP** (Name, Address/URL, Phone) across all platforms — must match the schema exactly
+2. **Consistent NAP** (Name, Address/URL, Phone) across all platforms, must match the schema exactly
 
-3. **Wikipedia or Wikidata entry** — strongest signal; create a Wikidata item if the brand doesn't have Wikipedia coverage yet (wikidata.org/wiki/Special:NewItem)
+3. **Wikipedia or Wikidata entry**: strongest signal; create a Wikidata item if the brand doesn't have Wikipedia coverage yet (wikidata.org/wiki/Special:NewItem)
 
-4. **Google Business Profile** — for service businesses; link it from `sameAs`
+4. **Google Business Profile**: for service businesses; link it from `sameAs`
 
-5. **Press mentions** — AI cites 31% press (per Princeton GEO Study); press mentions establish the entity as real and notable
+5. **Press mentions**: AI cites 31% press (per Princeton GEO Study); press mentions establish the entity as real and notable
 
 ### Implementation checklist
 
@@ -815,7 +818,7 @@ Google's Knowledge Panel for a brand requires entity disambiguation. The schema 
 
 ---
 
-## Step 4 — Content GEO Signals
+## Step 4: Content GEO Signals
 
 These go in the **page body content**, not just the head. AI models read the full page.
 
@@ -845,7 +848,7 @@ These go in the **page body content**, not just the head. AI models read the ful
 
 **Key sources to cite** (verified academic/authority):
 
-- Princeton GEO Study: `https://arxiv.org/abs/2311.09735` — Aggarwal et al., "GEO: Generative Engine Optimization"
+- Princeton GEO Study: `https://arxiv.org/abs/2311.09735`: Aggarwal et al., "GEO: Generative Engine Optimization"
 - Google Search Central docs: `https://developers.google.com/search/docs/fundamentals/seo-starter-guide`
 - Schema.org vocabulary: `https://schema.org`
 - Moz Domain Authority definition: `https://moz.com/learn/seo/domain-authority`
@@ -950,7 +953,7 @@ Every key page should have a visible FAQ section **AND** a matching per-page `FA
 
 > **⚠️ 2026 update (Averi):** In the FAQ block itself, keep H3s phrased as questions. But for **main page content H2/H3s**, use **descriptive** phrasing, not questions. Descriptive headings average **4.3 citations** vs **3.4** for question-style headings. Reserve question phrasing for the FAQ block only.
 
-**Answer length:** 40–60 words per answer — this is the extraction sweet spot for Perplexity and ChatGPT. Under 30 words loses context; over 80 words gets truncated.
+**Answer length:** 40–60 words per answer; this is the extraction sweet spot for Perplexity and ChatGPT. Under 30 words loses context; over 80 words gets truncated.
 
 ```html
 <section>
@@ -974,7 +977,7 @@ Quote named experts with attribution. AI models weight content higher when it co
 <blockquote>
   <p>"{{QUOTE_TEXT}}"</p>
   <cite
-    >— {{EXPERT_NAME}}, {{EXPERT_TITLE}},
+    > {{EXPERT_NAME}}, {{EXPERT_TITLE}},
     <a href="{{SOURCE_URL}}">{{SOURCE_NAME}}</a></cite
   >
 </blockquote>
@@ -984,7 +987,7 @@ Quote named experts with attribution. AI models weight content higher when it co
 
 <!-- added by skill-radar 2026-08-16 from agricidaniel/claude-seo@seo-content, @seo-content-brief, kostja94/marketing-skills@content-strategy -->
 
-## Step 4.5 — Content Quality Gates (Google-official, apply before any GEO tactic)
+## Step 4.5: Content Quality Gates (Google-official, apply before any GEO tactic)
 
 Everything above optimizes *how* a page is packaged. These gates decide whether it deserves to be cited at all. Run them first; a page that fails Who/How/Why does not get rescued by schema.
 
@@ -1041,7 +1044,7 @@ Two consequences for this skill:
 
 ---
 
-## Step 5 — Technical Hygiene Checklist
+## Step 5: Technical Hygiene Checklist
 
 Run through this for every page generated or audited:
 
@@ -1050,7 +1053,7 @@ Run through this for every page generated or audited:
 - [ ] All images have `width` and `height` attributes (prevents CLS)
 - [ ] All images have descriptive `alt` text (not empty, not "image")
 - [ ] Images below the fold use `loading="lazy"`
-- [ ] Logo / hero image above the fold uses `loading="eager"` (NOT lazy — pressbeat.io has this wrong)
+- [ ] Logo / hero image above the fold uses `loading="eager"` (NOT lazy; pressbeat.io has this wrong)
 - [ ] OG image is 1200×630px
 
 ### Performance
@@ -1062,7 +1065,7 @@ Run through this for every page generated or audited:
 ### Canonical + Crawl
 
 - [ ] Every page has `<link rel="canonical" href="{{EXACT_URL}}" />`
-- [ ] www and non-www are consistent — pick one and 301 the other
+- [ ] www and non-www are consistent: pick one and 301 the other
 - [ ] `og:url` matches canonical exactly
 - [ ] `sitemap.xml` exists and submitted to Google Search Console
 - [ ] `robots.txt` exists and does not block `/`
@@ -1096,13 +1099,13 @@ program. Not required today; worth watching.
 
 ---
 
-## Step 6 — Google Content Warehouse API Leak (2024) — Signal Intelligence
+## Step 6: Google Content Warehouse API Leak (2024), Signal Intelligence
 
-Source: the 2024 Google Content Warehouse API leak exposed 2,596 modules and 14,014 attributes. Combined with the 2025–2026 GEO data above, these attributes tell you **what Google's systems actually read** — so structuring HTML to match pays off in both SEO and GEO (since AI engines scrape what Google indexes).
+Source: the 2024 Google Content Warehouse API leak exposed 2,596 modules and 14,014 attributes. Combined with the 2025–2026 GEO data above, these attributes tell you **what Google's systems actually read**, so structuring HTML to match pays off in both SEO and GEO (since AI engines scrape what Google indexes).
 
 > **Caveat:** the leak confirms attributes *exist*; exact weights are not confirmed. Treat these as confirmed factors, impact as informed estimates.
 
-### 6a. Title tag — match `titlematchScore`
+### 6a. Title tag: match `titlematchScore`
 
 - Primary keyword in **first 40 characters**
 - Brand token at end
@@ -1112,11 +1115,11 @@ Source: the 2024 Google Content Warehouse API leak exposed 2,596 modules and 14,
 <title>X Core SEO Tactics for [Entity] | [Brand]</title>
 ```
 
-### 6b. Date reconciliation — avoid `trustSyntacticDateInRanking = false`
+### 6b. Date reconciliation: avoid `trustSyntacticDateInRanking = false`
 
-Google extracts publish dates from **four** places: URL slug, JSON-LD `datePublished`, visible byline, `<meta>` tags. If any two disagree by **more than 7 days**, the freshness signal is discarded entirely — meaning your recency advantage evaporates.
+Google extracts publish dates from **four** places: URL slug, JSON-LD `datePublished`, visible byline, `<meta>` tags. If any two disagree by **more than 7 days**, the freshness signal is discarded entirely, meaning your recency advantage evaporates.
 
-**Rule:** all four must match. Copyright-year and sidebar edits do NOT reset `lastSignificantUpdate` — only substantive content rewrites.
+**Rule:** all four must match. Copyright-year and sidebar edits do NOT reset `lastSignificantUpdate`; only substantive content rewrites do.
 
 ```html
 <p class="byline">
@@ -1144,8 +1147,8 @@ Transparent revision history is a quality signal. Show it visibly:
 
 ### 6d. Above-the-fold answer placement (NavBoost: `goodClicks`, `lastLongestClicks`, `badClicks`)
 
-- Place the answer-bearing paragraph in the **first 500px** — reduces pogo-stick bounces (`badClicks`) and lengthens dwell (`lastLongestClicks`)
-- NavBoost runs a **13-month rolling window** — new content needs 2–3 months of sustained positive clicks to compete with aged pages
+- Place the answer-bearing paragraph in the **first 500px**: reduces pogo-stick bounces (`badClicks`) and lengthens dwell (`lastLongestClicks`)
+- NavBoost runs a **13-month rolling window**: new content needs 2–3 months of sustained positive clicks to compete with aged pages
 - Add related-content in-body links to extend session depth (`pnav` signal)
 
 ### 6e. Entity-density via Article `about`
@@ -1164,12 +1167,12 @@ Beyond `author` and `publisher`, link to the entities the page discusses. Reinfo
 }
 ```
 
-Target: **15+ recognized entities per page** (Averi 2026) — page schema + body mentions + backlinks combined.
+Target: **15+ recognized entities per page** (Averi 2026): page schema + body mentions + backlinks combined.
 
-### 6f. Internal anchor text — descriptive, not generic
+### 6f. Internal anchor text: descriptive, not generic
 
-- ❌ "click here", "learn more", "read more" — wastes the anchor slot
-- ✅ "5 actionable SEO tactics for local rankings" — specific, keyword-rich, topical
+- ❌ "click here", "learn more", "read more": wastes the anchor slot
+- ✅ "5 actionable SEO tactics for local rankings": specific, keyword-rich, topical
 
 Google's `AnchorsAnchor` and `droppedAnchorCount` attributes track anchor quality. Generic anchors get discarded.
 
@@ -1232,9 +1235,9 @@ The `uacSpamScore` and `GibberishScore` attributes (Step 6i) are the algorithmic
 
 ---
 
-## Step 7 — Press Release Playbook (Muck Rack, Dec 2025)
+## Step 7: Press Release Playbook (Muck Rack, Dec 2025)
 
-Press release citations grew **5x** in 6 months (Jul–Dec 2025) — fastest-growing AI citation source. The Dec 2025 study identified exactly what makes a press release get cited.
+Press release citations grew **5x** in 6 months (Jul–Dec 2025), the fastest-growing AI citation source. The Dec 2025 study identified exactly what makes a press release get cited.
 
 ### 7a. Structural profile of cited press releases
 
@@ -1246,27 +1249,27 @@ Against non-cited baselines, cited PRs had:
 - **30%** higher rate of objective (fact-based) sentences
 - More unique company/product mentions (build a named-entity mesh)
 
-### 7b. Template — AI-optimized press release
+### 7b. Template: AI-optimized press release
 
 ```markdown
-# {{Brand}} {{Action Verb}} {{Noun}} — {{Specific Outcome Number}}
+# {{Brand}} {{Action Verb}} {{Noun}}: {{Specific Outcome Number}}
 
-**{{City, State — Date}}** — {{One-sentence lead with primary stat, entity name, and timeframe.}}
+**{{City, State, Date}}**: {{One-sentence lead with primary stat, entity name, and timeframe.}}
 
 ## Key Findings
-- **{{Stat 1}}** — {{source / methodology}}
-- **{{Stat 2}}** — {{source / methodology}}
-- **{{Stat 3}}** — {{source / methodology}}
-- **{{Stat 4}}** — {{source / methodology}}
-- **{{Stat 5}}** — {{source / methodology}}
-- **{{Stat 6}}** — {{source / methodology}}
+- **{{Stat 1}}**: {{source / methodology}}
+- **{{Stat 2}}**: {{source / methodology}}
+- **{{Stat 3}}**: {{source / methodology}}
+- **{{Stat 4}}**: {{source / methodology}}
+- **{{Stat 5}}**: {{source / methodology}}
+- **{{Stat 6}}**: {{source / methodology}}
 
 ## Background
 {{2–3 objective sentences. No adjectives of self-promotion. Active voice.}}
 
 ## Expert Quote
 > "{{Quote citing one specific stat, one implication.}}"
-> — {{Name}}, {{Title}}, {{Brand}}
+> {{Name}}, {{Title}}, {{Brand}}
 
 ## About {{Brand}}
 {{50-word boilerplate with canonical URL, founding year, HQ, sameAs-matching description.}}
@@ -1290,21 +1293,21 @@ Citation rate peaks within **7 days** of publication and decays fast. Schedule t
 
 ---
 
-## Step 8 — Community Platform Signals (Reddit, Medium, Quora, YouTube)
+## Step 8: Community Platform Signals (Reddit, Medium, Quora, YouTube)
 
 The Dec 2025 Muck Rack data flagged Reddit, Medium, and Quora as **rising AI power players**. They provide signals AI engines weight heavily:
 
-- **Human engagement at scale** — upvotes, comments, shares
-- **First-person authentic perspectives** — which AI models prefer over marketing copy
-- **High crawlability** — these platforms have zero anti-bot friction
-- **Journalist sourcing validation** — reporters source quotes from these platforms, which then get cited
+- **Human engagement at scale**: upvotes, comments, shares
+- **First-person authentic perspectives**: which AI models prefer over marketing copy
+- **High crawlability**: these platforms have zero anti-bot friction
+- **Journalist sourcing validation**: reporters source quotes from these platforms, which then get cited
 
 ### 8a. Reddit strategy
 
 - Own (or co-own) a subreddit for your category
 - Seed founder AMAs with substantive answers (no link-spam)
-- Answer "best X" and "X vs Y" threads with data-backed, cited responses that mention your brand name in a neutral/comparative context — not as the only option
-- Let natural upvotes validate — never buy/manipulate votes (Reddit's detection + Google's `unauthoritativeScore` both punish it)
+- Answer "best X" and "X vs Y" threads with data-backed, cited responses that mention your brand name in a neutral/comparative context, not as the only option
+- Let natural upvotes validate; never buy or manipulate votes (Reddit's detection + Google's `unauthoritativeScore` both punish it)
 
 ### 8b. Medium strategy
 
@@ -1320,28 +1323,28 @@ The Dec 2025 Muck Rack data flagged Reddit, Medium, and Quora as **rising AI pow
 
 ### 8d. YouTube strategy
 
-- Publish the video version of every Tier 1 blog post — YouTube is Google's #2 property, and transcripts get indexed
+- Publish the video version of every Tier 1 blog post: YouTube is Google's #2 property, and transcripts get indexed
 - Upload SRT captions (not auto-generated) for higher transcript quality
 - Include a structured description with timestamps and source links
 
 ### 8e. Fan-out content (Generative Pulse Summit, 2025)
 
-Anticipate follow-up questions AI users ask after the primary query. Create "fan-out" content — 5–10 satellite pieces per hub page, each answering one specific follow-up. Seed answers across the 4 platforms above **before competitors** publish. This captures the multi-turn conversation in AI engines.
+Anticipate follow-up questions AI users ask after the primary query. Create "fan-out" content: 5–10 satellite pieces per hub page, each answering one specific follow-up. Seed answers across the 4 platforms above **before competitors** publish. This captures the multi-turn conversation in AI engines.
 
 ---
 
-## Step 9 — Next.js 15 App Router Implementation
+## Step 9: Next.js 15 App Router Implementation
 
 For Next.js 15 App Router projects:
 
-### `app/layout.tsx` — sitewide metadata via Next.js Metadata API
+### `app/layout.tsx`: sitewide metadata via Next.js Metadata API
 
 ```tsx
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: {
-    default: "{{BRAND_NAME}} — {{TAGLINE}}",
+    default: "{{BRAND_NAME}}: {{TAGLINE}}",
     template: "%s | {{BRAND_NAME}}",
   },
   description: "{{150_CHAR_DESCRIPTION}}",
@@ -1356,20 +1359,20 @@ export const metadata: Metadata = {
     type: "website",
     locale: "{{OG_LOCALE}}", // e.g. en_US, en_PH; match <html lang>
     siteName: "{{BRAND_NAME}}",
-    title: "{{BRAND_NAME}} — {{TAGLINE}}",
+    title: "{{BRAND_NAME}}: {{TAGLINE}}",
     description: "{{150_CHAR_DESCRIPTION}}",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "{{BRAND_NAME}} — {{TAGLINE}}",
+        alt: "{{BRAND_NAME}}: {{TAGLINE}}",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "{{BRAND_NAME}} — {{TAGLINE}}",
+    title: "{{BRAND_NAME}}: {{TAGLINE}}",
     description: "{{150_CHAR_DESCRIPTION}}",
     images: ["/og-image.png"],
     creator: "@{{TWITTER_HANDLE}}",
@@ -1378,17 +1381,17 @@ export const metadata: Metadata = {
 };
 ```
 
-### JSON-LD injection in layout — use a `JsonLd` helper component
+### JSON-LD injection in layout: use a `JsonLd` helper component
 
 Create `components/json-ld.tsx`:
 
 ```tsx
-// Safe JSON-LD injection component — content is static schema, not user input
+// Safe JSON-LD injection component: content is static schema, not user input
 export function JsonLd({ schema }: { schema: Record<string, unknown> }) {
   return (
     <script
       type="application/ld+json"
-      // Static schema object serialized server-side — not derived from user input
+      // Static schema object serialized server-side: not derived from user input
       // biome-ignore lint/security/noDangerouslySetInnerHtml: static JSON-LD
       dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g, "\\u003c") }}
     />
@@ -1954,7 +1957,7 @@ Domain-age skew worth knowing before promising a client results: AI Overviews ci
 #### Push submission: there is almost none
 
 - **Bing IndexNow** is the only general-purpose push channel for new or updated URLs. Use it.
-- **Google's Indexing API is not general purpose** — it accepts `JobPosting` and `BroadcastEvent` pages only. Any vendor claiming to "submit your pages to Google" for other page types is selling nothing.
+- **Google's Indexing API is not general purpose**: it accepts `JobPosting` and `BroadcastEvent` pages only. Any vendor claiming to "submit your pages to Google" for other page types is selling nothing.
 - OpenAI, Anthropic, Perplexity, xAI, Meta, and DeepSeek operate **no public submission portal**. Their crawlers find content through ordinary crawl and `sitemap.xml` only. Sitemap hygiene is the entire submission strategy for those surfaces.
 
 #### Decision matrix: block or allow AI crawlers?
@@ -2148,7 +2151,7 @@ Two distinct optimization targets:
 - **Google Search + AI Overviews**: standard HTML, correct schema, good indexing. No LLMs.txt needed.
 - **Non-Google AI systems (ChatGPT, Claude, Perplexity)**: LLMs.txt + .md.txt companions help crawlers get clean, structured content without navigating JS-heavy or server-rendered HTML.
 
-**Scope ceiling (Mueller, 2026-06-15) — state this to any client before building the layer.**
+**Scope ceiling (Mueller, 2026-06-15): state this to any client before building the layer.**
 `llms.txt` is a **navigation and extraction** aid for an agent that has already arrived. It is **not a discovery mechanism**: an LLM cannot use a self-reported file to decide which of two competing sites to surface, because both can assert the same thing. Google's comparison is the meta keywords tag. Discovery still runs on HTML plus internal links.
 
 So the honest value proposition for Step 17 is: *cheaper, cleaner extraction once a crawler is on the page, and fewer garbled quotes in an answer.* It is not a ranking lever, not a citation lever, and any vendor selling it as one is selling a keywords tag. Build it when the site is JS-heavy or the HTML is noisy; skip it when clean server-rendered HTML already extracts well. Agent-navigation standards (WebMCP and successors) had not settled as of mid-2026, so expect this layer's format to change.
@@ -2376,15 +2379,15 @@ This result is **Measured** for the surface you actually tested and an **Estimat
 
 Label every number in an audit or report as exactly one of:
 
-- **Measured** — came from a tool export, an analytics API, or a test you ran and can re-run
-- **User-provided** — the client told you
-- **Estimated** — model inference, benchmark extrapolation, or an industry average applied to this client
+- **Measured**: came from a tool export, an analytics API, or a test you ran and can re-run
+- **User-provided**: the client told you
+- **Estimated**: model inference, benchmark extrapolation, or an industry average applied to this client
 
 Never present an Estimated number as Measured. If a required metric is unavailable, mark it **N/A** and say why. Do not fill the gap with a plausible figure. An audit whose estimates are visibly labeled survives a client challenging one number; an audit that silently mixes the two does not survive it at all.
 
 ---
 
-## Content Decay — Triage Existing Pages
+## Content Decay: Triage Existing Pages
 
 Publishing is only half the job; existing pages decay. Signals: clicks declining
 month-over-month for 3+ months, position slipping off page 1, impressions stable but CTR
@@ -2415,7 +2418,7 @@ Decay = (Traffic × 0.30) + (Position × 0.25) + (CTR × 0.15)
 | 81-100 | Terminal decay | Rewrite, redirect, or retire |
 
 Escalate when signals combine: traffic decline + position drop, or traffic decline + CTR
-decline, is P1 — act within 48 hours. Position drop + competitor displacement is P2, one
+decline, is P1: act within 48 hours. Position drop + competitor displacement is P2, one
 week. CTR decline alone or freshness alone is P3.
 
 ### Decay Triage Decision Tree
@@ -2424,7 +2427,7 @@ week. CTR decline alone or freshness alone is P3.
    → **Retire**: 301 to the closest relevant page or parent category. Yes → 2.
 2. **Is another page on the site targeting the same topic?** Yes → **Consolidate**: merge the
    best of both into one, 301 the weaker page. No → 3.
-3. **Has search intent shifted?** Check what currently ranks — listicles → long-form,
+3. **Has search intent shifted?** Check what currently ranks: listicles → long-form,
    blog → product page, text → video, general → specific. Yes → **Rewrite** to match current
    intent, keep the URL. No → 4.
 4. **Is the content simply outdated?** (stale stats, old screenshots, deprecated tools, old
@@ -2450,7 +2453,7 @@ When invoked as `/geo-seo audit`, read the existing head component + page files 
 
 **Schema gaps:**
 
-- [ ] **No double-escaped HTML entities anywhere in a `ld+json` block** (2026-08-20 parser change — check raw page source, not a validator; a double-escaped entity inside `sameAs` / `offers.url` / `url` / `logo` silently drops the value)?
+- [ ] **No double-escaped HTML entities anywhere in a `ld+json` block** (2026-08-20 parser change; check raw page source, not a validator; a double-escaped entity inside `sameAs` / `offers.url` / `url` / `logo` silently drops the value)?
 - [ ] Schema serialized via `JSON.stringify()` on an object, not concatenated from HTML-escaped strings?
 - [ ] Organization schema present?
 - [ ] `sameAs` has 4+ URLs?
@@ -2469,7 +2472,7 @@ When invoked as `/geo-seo audit`, read the existing head component + page files 
 - [ ] Unique description per page (not sitewide default)?
 - [ ] Title tag < 60 chars with primary keyword in first 40?
 
-**Date integrity gaps (new — Google Leak):**
+**Date integrity gaps (new, Google Leak):**
 
 - [ ] URL slug date, JSON-LD `datePublished`, visible byline, `<meta>` tags all agree within 7 days?
 - [ ] `dateModified` only updated on substantive content changes (not copyright/widget edits)?
@@ -2487,7 +2490,7 @@ When invoked as `/geo-seo audit`, read the existing head component + page files 
 - [ ] Expert quote with attribution?
 - [ ] Min 300 words substantive content (avoid `vlq` flag)?
 
-**Demotion risk (new — Google Leak):**
+**Demotion risk (new, Google Leak):**
 
 - [ ] No "click here" / "read more" internal anchors?
 - [ ] No fake urgency / hidden contact / unverifiable testimonials (scamness risk)?
@@ -2513,14 +2516,14 @@ When invoked as `/geo-seo audit`, read the existing head component + page files 
 - [ ] `robots.txt` allows AI crawlers for brand/content sites (GPTBot, ClaudeBot, PerplexityBot)?
 - [ ] `<link rel="alternate" type="text/plain" href="/llms.txt">` present in `<head>`?
 
-**Earned-media gaps (new — Muck Rack Dec 2025):**
+**Earned-media gaps (new, Muck Rack Dec 2025):**
 
 - [ ] Press release pipeline established (targeting AI-cited outlets per platform)?
 - [ ] Media list audited against AI-cited bylines (not just pitched journalists)?
 - [ ] Reddit / Medium / Quora / YouTube presence for category?
 - [ ] Fan-out content covering follow-up questions?
 
-Output as: PRESENT / MISSING / WRONG — with specific file:line for each issue.
+Output as: PRESENT / MISSING / WRONG, with specific file:line for each issue.
 
 ---
 
@@ -2534,18 +2537,18 @@ Embed these in content where relevant. The first four are the highest-authority 
 | Muck Rack Generative Pulse | Muck Rack (Dec 2025). "What Is AI Reading? Generative Pulse 2025." 1M+ citations analyzed | https://generativepulse.ai/report/ · https://muckrack.com/blog/more-stats-from-what-is-ai-reading           |
 | Averi B2B SaaS Benchmarks | Averi (2026). "ChatGPT vs Perplexity vs Google AI Mode: B2B SaaS Citation Benchmarks" | https://www.averi.ai/how-to/chatgpt-vs.-perplexity-vs.-google-ai-mode-the-b2b-saas-citation-benchmarks-report-(2026) |
 | Google Content Warehouse Leak | May 2024 leak of 2,596 internal modules + 14,014 attributes (`siteAuthority`, NavBoost, etc.) | https://github.com/schoberg/google-ranking-signals-plugin                                                   |
-| Google AI Optimization Guide | Google (2025). "AI optimization guide" — official guidance on optimizing for Google AI features. Scope: Google Search / AI Overviews only, NOT for non-Google AI systems. | https://developers.google.com/search/docs/fundamentals/ai-optimization-guide |
+| Google AI Optimization Guide | Google (2025). "AI optimization guide"; official guidance on optimizing for Google AI features. Scope: Google Search / AI Overviews only, NOT for non-Google AI systems. | https://developers.google.com/search/docs/fundamentals/ai-optimization-guide |
 | LLMstxt.org Spec | Ansgar Grunseid et al. (2024). Standard for llms.txt and per-page .md.txt companions for non-Google AI crawler discoverability. | https://llmstxt.org |
 | Google E-E-A-T Guidelines | Google Search Quality Rater Guidelines                                          | https://static.googleusercontent.com/media/guidelines.raterhub.com/en//searchqualityevaluatorguidelines.pdf |
 | Schema.org                | Schema.org Vocabulary Reference                                                 | https://schema.org                                                                                          |
-| Google Structured Data    | Google Search Central — Structured Data                                         | https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data                  |
-| Google Knowledge Panel    | Google — Manage your Knowledge Panel                                            | https://support.google.com/knowledgepanel/answer/9163198                                                    |
+| Google Structured Data    | Google Search Central: Structured Data                                         | https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data                  |
+| Google Knowledge Panel    | Google: Manage your Knowledge Panel                                            | https://support.google.com/knowledgepanel/answer/9163198                                                    |
 
 ---
 
 ## One-Shot Page Brief Template
 
-When generating a new page for any project, fill this brief once and hand it to the skill — it captures every input the schema stack, content blocks, and audit checklist need.
+When generating a new page for any project, fill this brief once and hand it to the skill; it captures every input the schema stack, content blocks, and audit checklist need.
 
 ```yaml
 # ==== Brand inputs (used by Organization / WebSite / SoftwareApplication schema) ====
@@ -2634,22 +2637,22 @@ Once the brief is filled, the skill produces: full JSON-LD stack → page-level 
 
 Full schema stack observed on pressbeat.io:
 
-**Sitewide (every page):** Organization + WebSite + SoftwareApplication (with aggregateRating) + FAQPage + SiteNavigationElement — 5 blocks
+**Sitewide (every page):** Organization + WebSite + SoftwareApplication (with aggregateRating) + FAQPage + SiteNavigationElement (5 blocks)
 
 **Blog index:** Blog + BreadcrumbList (2-level)
 
 **Article pages:** Article + BreadcrumbList (3-level) + `og:type: article` + `article:published_time/modified_time/author/tag`
 
-**Homepage H2 targeting AI stat:** "27% of ChatGPT Sources Come From Organic Press" — stat as headline, not buried in body
+**Homepage H2 targeting AI stat:** "27% of ChatGPT Sources Come From Organic Press": stat as headline, not buried in body
 
 **Internal linking:** Inline contextual links with descriptive anchor text (no "click here")
 
-**Known gaps in pressbeat.io — do better than this:**
+**Known gaps in pressbeat.io (do better than this):**
 
 - No canonical on homepage
-- Only 2 `sameAs` entries — needs 2 more
-- No per-article FAQPage schema (FAQ in body only — add schema too)
-- Logo above fold uses `loading="lazy"` — should be `eager`
+- Only 2 `sameAs` entries; needs 2 more
+- No per-article FAQPage schema (FAQ in body only; add schema too)
+- Logo above fold uses `loading="lazy"`: should be `eager`
 - No hreflang despite multilingual claims
 
 ---
@@ -2723,7 +2726,7 @@ Every language variant of a page must declare `hreflang` links to **all** other 
 <link rel="alternate" hreflang="fil" href="https://example.com/fil/page" />
 <link rel="alternate" hreflang="x-default" href="https://example.com/en/page" />
 
-<!-- On the Filipino page — must also declare both -->
+<!-- On the Filipino page: must also declare both -->
 <link rel="alternate" hreflang="en" href="https://example.com/en/page" />
 <link rel="alternate" hreflang="fil" href="https://example.com/fil/page" />
 <link rel="alternate" hreflang="x-default" href="https://example.com/en/page" />
