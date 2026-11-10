@@ -1,14 +1,20 @@
 {
   "name": "geo-seo-plugin",
-  "version": "1.0.0",
-  "description": "Generative Engine Optimization (GEO) + SEO skill for Claude Code. Generates JSON-LD schema stacks, press-release playbooks, entity density, and AI-citation-optimized content based on the Princeton GEO Study, Muck Rack Generative Pulse Dec 2025 (1M+ citations analyzed), Averi B2B SaaS Citation Benchmarks 2026, and the 2024 Google Content Warehouse API leak.",
-  "author": "Santino Gatmaytan",
+  "version": "2.0.0",
+  "description": "Get a site found, cited and recommended by ChatGPT, Perplexity, Gemini and Google (GEO, AEO, AI visibility, SEO). Leads with a field-tested Answer Library playbook for new products, then JSON-LD schema stacks, metadata, sitemap and robots, llms.txt, and AI-citation content rules grounded in the Princeton GEO Study, Muck Rack Generative Pulse, Averi and Foglift citation benchmarks, and Google's guidance. Ships a zero-dependency audit script.",
+  "author": {
+    "name": "Santino Gatmaytan",
+    "url": "https://github.com/sants2001"
+  },
   "license": "MIT",
   "repository": "https://github.com/sants2001/geo-seo-plugin",
   "keywords": [
     "seo",
     "geo",
+    "aeo",
     "generative-engine-optimization",
+    "ai-visibility",
+    "llms-txt",
     "schema-org",
     "jsonld",
     "ai-citations",

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "geo-seo-plugin",
+  "description": "Get a site found, cited and recommended by AI answer engines and Google.",
+  "owner": {
+    "name": "Santino Gatmaytan",
+    "url": "https://github.com/sants2001"
+  },
+  "plugins": [
+    {
+      "name": "geo-seo-plugin",
+      "source": "./",
+      "description": "GEO, AEO and SEO skill: a field-tested Answer Library playbook, schema and metadata generation, and an audit script.",
+      "version": "2.0.0",
+      "category": "marketing"
+    }
+  ]
+}
